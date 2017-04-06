@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TicketSpinner</string>
+    <string-array name="cinemas">
+        <item>台北影城</item>
+        <item>板桥影城</item>
+        <item>台中影城</item>
+        <item>台南影城</item>
+        <item>高阳影城</item>
+    </string-array>
+    <string-array name="time">
+        <item>早上</item>
+        <item>中午</item>
+        <item>晚上</item>
+    </string-array>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ticketspinner.MainActivity">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="114dp"
+            android:entries="@array/cinemas"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            tools:layout_editor_absoluteX="105dp" />
+
+        <Spinner
+            android:id="@+id/time"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/time"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="order"
+            android:text="订票"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <TextView
+            android:id="@+id/txv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未订票"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="324dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
